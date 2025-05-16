@@ -1,0 +1,14 @@
+.not-found-container {
+  text-align: center;
+  padding: 4rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.not-found-container img {
+  margin: 1rem 0;
+}
+
+.not-found-container p {
+  font-size: 1.2rem;
+}

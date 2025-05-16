@@ -1,0 +1,201 @@
+/* ====== Global Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ====== Menubar Container ====== */
+.menubar {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  background-color: #1e1e1e;
+  padding: 0.75rem 1rem;
+  border-bottom: 3px solid #333;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  white-space: nowrap;
+  gap: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.menubar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* ====== Logo Styling ====== */
+.menu-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ====== Link Styling in Menubar ====== */
+.menubar a {
+  color: #fff;
+  background-color: #444;
+  padding: 0.4rem 0.4rem;
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menubar a:hover {
+  background-color: #ff6f00;
+  transform: scale(1.05);
+  color: #fff;
+}
+/* ====== Menubar Container ====== */
+.menubar {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  background: linear-gradient(90deg,lightblue, #6d2da1); /* Soft gradient */
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid #b0bec5;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  gap: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar in WebKit (Chrome/Safari) */
+.menubar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ====== Logo Styling ====== */
+.menu-logo {
+  height: 40px;
+  width: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ====== Link Styling in Menubar ====== */
+.menubar a {
+  color: #d9dbdd;
+  background-color: #a3a5a5;
+  padding: 0.4rem 0.7rem;
+  border-radius: 60px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menubar a:hover {
+  background-color: #111415;
+  transform: scale(1.05);
+  color: #000;
+}
+/* ====== Global Reset ====== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* ====== Menubar Container ====== */
+.menubar {
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  background: linear-gradient(90deg, hwb(253 13% 24%), #5444ce); /* Soft cool gradient */
+  padding: 0.75rem 1rem;
+  border-bottom: 2px solid #c0cbd4;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  white-space: nowrap;
+  gap: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.menubar::-webkit-scrollbar {
+  display: none;
+}
+
+/* ====== Logo Styling ====== */
+.menu-logo {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* ====== Link Styling in Menubar ====== */
+.menubar a {
+  color: #2c3e50;
+  background-color: #d6e4f0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menubar a:hover {
+  background-color: #7b18a8;
+  transform: scale(1.05);
+  color: #0d1b2a;
+}
+
+.menubar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #c095cd, #ce44ce); /* Soft cool gradient */
+  padding: 0.2rem 0.3rem; /* Smaller padding */
+  border-bottom: 1px solid #db68bd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  white-space: nowrap; /* Prevent wrapping */
+  font-size: 0.85rem; /* Optional: smaller font */
+}
+
+
+/* Left Logo */
+.menu-logo {
+  height: 60px;
+  width: 60px;
+  object-fit: cover;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Right Navigation Links Container */
+.menu-links {
+  display: flex;
+  gap: 0.6rem;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none; /* Firefox */
+}
+
+.menu-links::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Navigation Links */
+.menu-links a {
+  color: #2c3e50;
+  background-color: #d6e4f0;
+  padding: 0.5rem 0.7rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.menu-links a:hover {
+  background-color: #90caf9;
+  transform: scale(1.05);
+  color: #0d1b2a;
+}
