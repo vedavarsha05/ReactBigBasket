@@ -8,7 +8,7 @@
 
 /* Hero */
 .hero-section {
-  background-image: url("hero-food.jpg");
+  background-image: url("/hero-food.jpg");
   background-size: cover;
   background-position: center;
   height: 100vh;

@@ -26,9 +26,43 @@ function Home() {
     ) {
       navigate("/nonveg");
     } else {
-      navigate(`/search?q=${encodeURIComponent(searchTerm.trim())}`);
+      navigate(`/search?q=${encodeURIComponent(term)}`);
     }
   };
+
+  const categories = [
+    {
+      name: "Vegetarian",
+      img: "/veg.jpg",
+      path: "/veg",
+      alt: "Vegetarian Dishes",
+    },
+    {
+      name: "Non-Vegetarian",
+      img: "/meat.jpg",
+      path: "/nonveg",
+      alt: "Meat Dishes",
+    },
+    {
+      name: "Chocolates",
+      img: "/chcol.jpg",
+      path: "/search?q=chocolates",
+      alt: "Chocolate Varieties",
+    },
+    {
+      name: "Milk & Dairy",
+      img: "/milkys.jpg",
+      path: "/search?q=milk",
+      alt: "Milk and Dairy Products",
+    },
+  ];
+
+  const featuredProducts = [
+    { name: "Dark Chocolate", img: "/chocolate.jpg", price: "₹99" },
+    { name: "Fresh Carrots", img: "/carrots.jpg", price: "₹45" },
+    { name: "Organic Chicken", img: "/organic.jpg", price: "₹180" },
+    { name: "Paneer Cubes", img: "/panneercubes.jpg", price: "₹120" },
+  ];
 
   return (
     <div className="home-container">
@@ -63,40 +97,21 @@ function Home() {
       <section className="categories-section">
         <h2 className="section-title">Our Menu Categories</h2>
         <div className="categories-grid">
-          <div
-            className="category-card"
-            style={{ cursor: "pointer" }}
-            onClick={() => navigate("/veg")}
-            role="button"
-            tabIndex={0}
-            onKeyPress={(e) => {
-              if (e.key === "Enter") navigate("/veg");
-            }}
-          >
-            <img src="/veg.jpg" alt="Vegetarian" />
-            <h3>Vegetarian</h3>
-          </div>
-          <div
-            className="category-card"
-            style={{ cursor: "pointer" }}
-            onClick={() => navigate("/nonveg")}
-            role="button"
-            tabIndex={0}
-            onKeyPress={(e) => {
-              if (e.key === "Enter") navigate("/nonveg");
-            }}
-          >
-            <img src="/meat.jpg" alt="Non-Vegetarian" />
-            <h3>Non-Vegetarian</h3>
-          </div>
-          <div className="category-card">
-            <img src="/chcol.jpg" alt="Chocolates" />
-            <h3>Chocolates</h3>
-          </div>
-          <div className="category-card">
-            <img src="/milkys.jpg" alt="Milk" />
-            <h3>Milk & Dairy</h3>
-          </div>
+          {categories.map((cat, index) => (
+            <div
+              key={index}
+              className="category-card clickable"
+              role="button"
+              tabIndex={0}
+              onClick={() => navigate(cat.path)}
+              onKeyPress={(e) => {
+                if (e.key === "Enter") navigate(cat.path);
+              }}
+            >
+              <img src={cat.img} alt={cat.alt} />
+              <h3>{cat.name}</h3>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -104,12 +119,7 @@ function Home() {
       <section className="featured-products">
         <h2 className="section-title">Featured Products</h2>
         <div className="product-grid">
-          {[
-            { name: "Dark Chocolate", img: "chocolate.jpg", price: "₹99" },
-            { name: "Fresh Carrots", img: "carrots.jpg", price: "₹45" },
-            { name: "Organic Chicken", img: "/organic.jpg", price: "₹180" },
-            { name: "Paneer Cubes", img: "/panneercubes.jpg", price: "₹120" },
-          ].map((item, i) => (
+          {featuredProducts.map((item, i) => (
             <div key={i} className="product-card">
               <img src={item.img} alt={item.name} />
               <h4>{item.name}</h4>
