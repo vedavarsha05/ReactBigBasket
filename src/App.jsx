@@ -6,7 +6,7 @@ import { logoutUser } from "./store";
 import './MyStyle1.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-import Home from "./Home";
+import Home from ".//Home";
 import Veg from "./Veg";
 import NonVeg from "./NonVeg";
 import Milk from "./Milk";
